@@ -1,0 +1,191 @@
+@import "reset.css";
+html {
+  font-size: 100px;
+}
+.header {
+  height: .5rem;
+  background: red;
+  background: #06c1ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header .header-left {
+  height: .5rem;
+  width: .66rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .header-left .header-left-city {
+  display: inline-block;
+  line-height: .5rem;
+  font-size: .16rem;
+  color: #fff;
+  margin-right: .1rem;
+  margin-left: .1rem;
+  text-align: center;
+}
+.header .header-center {
+  height: .5rem;
+  margin-left: .66rem;
+  margin-right: .5rem;
+}
+.header .header-center .search {
+  position: relative;
+  height: .32rem;
+  background: #06a495;
+  margin-top: .1rem;
+  border-radius: .04rem;
+}
+.header .header-center .search .icon-search {
+  position: absolute;
+  top: .1rem;
+  left: .1rem;
+}
+.header .header-center .search .icon-text {
+  color: #59d3c4;
+  font-size: .12rem;
+  line-height: .32rem;
+  padding-left: .3rem;
+}
+.header .header-right {
+  height: .5rem;
+  width: .5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header .header-right .reat {
+  width: .24rem;
+}
+.header .header-right .reat .header-right-tu {
+  margin-left: .12rem;
+  margin-top: .04rem;
+}
+.header .header-right .reat .header-right-text {
+  text-align: center;
+  color: #f7feff;
+  font-size: .12rem;
+}
+.section {
+  background: #f0efed;
+}
+.section .section-top {
+  height: .5rem;
+}
+.section .section-top .section-img {
+  display: block;
+  margin: 0 auto;
+}
+.section .menu {
+  background: #fff;
+  padding: .1rem 0;
+}
+.section .menu .icon {
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: .2rem;
+}
+.section .menu .icon .icon-pic {
+  display: block;
+  width: .42rem;
+  height: .42rem;
+  margin: 0 auto;
+  background: url(../img/2.jpg) no-repeat;
+}
+.section .menu .icon .icon-text {
+  margin-top: .08rem;
+}
+.section .main {
+  margin-top: .04rem;
+  background: #fff;
+}
+.section .main .icon-top {
+  height: .4rem;
+  line-height: .4rem;
+  font-size: .17rem;
+  color: #343434;
+  margin-left: .1rem;
+}
+.section .main .xian {
+  height: .02rem;
+  border-bottom: 2px solid #f5f5f5;
+  margin: 0 0 0 .1rem;
+}
+.section .main .banner {
+  margin-bottom: .12rem;
+  margin-left: .1rem;
+  position: relative;
+  margin-top: .15rem;
+}
+.section .main .banner .banner-left {
+  width: .9rem;
+  height: .9rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.section .main .banner .banner-right {
+  height: .9rem;
+  margin-left: 1rem;
+}
+.section .main .banner .banner-right .icon-text1 {
+  display: block;
+  font-size: .13rem;
+  color: #303030;
+  margin-top: .04rem;
+}
+.section .main .banner .banner-right .icon-text2 {
+  display: block;
+  color: #666666;
+  font-size: .12rem;
+  margin-top: .06rem;
+}
+.section .main .banner .banner-right .icon-text3 {
+  display: block;
+  margin-top: .1rem;
+}
+.section .main .banner .banner-right .icon-text3 .icon-color1 {
+  font-size: .14rem;
+  color: #03c5ad;
+  font-weight: bold;
+}
+.section .main .banner .banner-right .icon-text3 .icon-color2 {
+  font-size: .12rem;
+  color: #68e2d3;
+}
+.section .main .banner .banner-right .icon-text3 .icon-color3 {
+  color: #646464;
+  font-size: .11rem;
+  margin-left: .04rem;
+}
+.footer {
+  height: .6rem;
+  border-top: 1px solid #dfd6d9;
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer .foot .icon {
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 8px;
+}
+.footer .foot .icon .icon-pic {
+  width: .26rem;
+  height: .23rem;
+  background: url(../img/111.jpg) no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+.footer .foot .first .icon-text {
+  color: #f47773;
+}

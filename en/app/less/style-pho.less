@@ -1,0 +1,934 @@
+/*-------------------------------------------------------
+
+  Mobile 移动端
+
+-------------------------------------------------------*/
+
+@m_img_base_url: "http://oertyi000.bkt.clouddn.com/img/en/1.5.9/mobile/";
+@media (min-width : 319px ) and (max-width : 736px) {
+  /*iphone 6*/
+  .v-pc{
+    display: none;
+  }
+  html, body, #page-container{
+    height: 100%;
+  }
+  #page-container{
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    .v-container{
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .tip{
+      padding: 20px;
+      font-size: 1.1em;
+      font-weight: 300;
+      color: #333;
+    }
+    .v-m-hide{
+      display: none !important;
+    }
+    .v-section-header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-height: 40px;
+      height: 40px;
+      width: 100%;
+      /* display: none; */
+      z-index: 111;
+      background: rgba(0, 0 , 0, .1);
+      border-bottom: none;
+
+      .v-nav-brand{
+        display: inline-block;
+        width: 50%;
+        margin-left: 15px;
+      }
+      .v-nav-container{display: none !important;}
+      .v-nav-contact{
+        font-family: 'Neutra Text-Book';
+        display: inline-block;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 900;
+        padding: 0 15px;
+        color: #a4a4a4;
+        float: right;
+      }
+      .logo{
+        margin-top: 8px;
+        display: inline-block;
+        height: 24px;
+        width: 126px;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-image: url("@{m_img_base_url}logo.png");
+      }
+      .logo img{
+        display: none;
+      }
+    }
+
+    .v-section{
+      position: relative;
+      min-height: 532px;
+      max-height: 667px;
+      height: 100%;
+
+      .v-title{
+        color: #333;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5;
+        font-family: 'Neutra Text-light';
+        margin-bottom: 15px;
+        text-align: left;
+      }
+      .v-p{
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-family: 'Brandon Grotesque-Light';
+        text-align: left;
+      }
+      .v-bg{
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+      }
+    }
+
+    .v-section-banner{
+      position: relative;
+      background-size: 100% auto;
+      background-position: 0 -48px;
+      background-repeat: no-repeat;
+      background-image: url("@{m_img_base_url}banner_750_1400.png");
+      //background-image: url("//oertyi000.bkt.clouddn.com/img/en/banner_1920_980.png?imageView2/1/w/1920/interlace/50");
+      color: #ccc;
+      text-align: center;
+      .v-container{
+        height: 100%;
+      }
+      .v-title{
+        text-align: center;
+        color: #fff;
+        margin-top: 100%;
+      }
+      .v-email-form, .v-p{
+        display: none;
+      }
+    }
+
+    .v-section-01{
+      background: #f3f3f3;
+      .v-container{
+        height: 100%;
+        padding-top: 80%;
+      }
+      article{
+        padding: 20px;
+        width: 100%;
+      }
+      .v-title, .v-p{
+        text-align: center;
+      }
+      .v-chat{
+        ul{
+          margin-left: 0;
+          margin-top: 20px;
+        }
+        li{
+          padding: 0;
+          text-align: center;
+          width: 100%;
+        }
+        .v-chat-content{
+          display: inline-block;
+          width: 236px;
+          font-family: 'Brandon Grotesque-Light';
+          line-height: 38px;
+          height: 44px;
+          text-align: left;
+          padding-left: 6px;
+          padding-right: 12px;
+          margin: 0;
+          overflow: hidden;
+          font-size: 12px !important;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          // background-image: url(../img/icon/first-yuyinkuang.png);
+          background-image: url("@{base-url}chat.png@{base-url-param}");
+        }
+      }
+
+      .v-bg{
+        text-align: center;
+      }
+      .v-bg figure{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: 100% auto;
+        background-position: 0 0px;
+        background-repeat: no-repeat;
+        background-image: url("@{m_img_base_url}section_01.png@{base-url-param}");
+      }
+    }
+
+    .v-section-02{
+      text-align: center;
+
+      .v-bg{
+        text-align: center;
+      }
+      .v-bg figure {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-size: 132px auto;
+        background-repeat: no-repeat;
+        background-position: 12px -5px;
+        background-image: url("@{m_img_base_url}section_02.png@{base-url-param}");
+      }
+      .v-container{
+        overflow: hidden;
+      }
+      .v-container article{
+        position: relative;
+        left: 0;
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+        padding-top: 28%;
+        padding-left: 136px;
+
+        .v-p{
+          text-align: left;
+        }
+      }
+
+      .v-icons-area{
+        position: absolute;
+        display: inline-block;
+        left: 0px;
+        bottom: 70px;
+        width:100%;
+        height: 180px;
+        margin: 0px;
+        background-repeat: no-repeat;
+        background-size: 80% auto;
+        background-position: center bottom;
+        background-image: url("@{m_img_base_url}section_02_icon.png@{base-url-param}");
+        li{
+          display: none;
+        }
+      }
+    }
+
+    .v-section-03{
+      background: #111;
+      width: 100%;
+      height: 100%;
+
+      background-position: right 0px;
+      background-size: 145px auto;
+      background-repeat: no-repeat;
+
+      background-image: url("@{m_img_base_url}section_03.png");
+      .v-bg{
+        display: none;
+      }
+      .v-container{
+        article{
+          width: 100%;
+          max-width: 320px;
+          padding: 20px;
+          padding-top: 60px;
+          padding-right: 100px;
+          overflow-y: scroll;
+          text-align: left;
+        }
+        .v-title, .v-p{
+          text-align: left;
+        }
+        .v-title{
+          color: #fff;
+          margin-bottom:20px;
+        }
+        .v-p{
+          color: #fff;
+          margin-bottom: 15px;
+        }
+      }
+      .v-logos{
+        position: absolute;
+        bottom: 110px;
+        left: 20px;
+        width: 146px;
+        height: 68px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-image: url("@{m_img_base_url}section_04_logo.png@{base-url-param}");
+      }
+      .v-icons{
+        position: absolute;
+        bottom: 40px;
+        left: 0px;
+        width: 100%;
+        height: 42px;
+        background-repeat: no-repeat;
+        background-size: 239px 42px;
+        background-position: center top;
+        background-image: url("@{m_img_base_url}section_04_icon.png@{base-url-param}");
+      }
+
+    }
+
+    .v-section-04{
+      padding-top: 0px;
+      background: #fff;
+
+      .v-container{
+        text-align: left;
+        z-index: 1;
+        article{
+          display: inline-block;
+          padding-top: 80px;
+          width: 100%;
+        }
+        .v-title{
+          padding-left: 20px;
+          padding-right: 40px;
+          margin-bottom: 15px;
+        }
+        .v-p{
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          text-align: left;
+        }
+        strong{
+          font-weight: 900;
+          font-size: 16px;
+          color: #444;
+        }
+      }
+      .v-bg{
+        overflow: hidden;
+      }
+      .v-bg-container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .v-bg-left, .v-bg-right{
+        width: 100%;
+        height: 100%;
+      }
+      .v-bg-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50%;
+        background-size: 208px auto;
+        background-position: left top;
+        background-repeat: no-repeat;
+        //background-attachment: fixed;
+        background-image: url("@{m_img_base_url}section_04_top.png@{base-url-param}");
+      }
+      .v-bg-right{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 50%;
+        background-size: 208px auto;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        //background-attachment: fixed;
+        background-image: url("@{m_img_base_url}section_04_bottom.png@{base-url-param}");
+      }
+    }
+
+    .v-section-05{
+      background: #111;
+
+      .v-bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+
+        .v-bg-left{
+          position: absolute;
+          bottom: 0;
+          height: 136px;
+          width: 100%;
+          background-size: auto 100%;
+          background-repeat: no-repeat;
+          background-position: 0px bottom;
+          background-image: url("@{base-url}section_05_bg_left.png@{base-url-param}");
+        }
+        .v-bg-right{
+          z-index: 1;
+          position: absolute;
+          right: 0;
+          top: 0px;
+          width: 100%;
+          height: 100px;
+          background-size: auto 100%;
+          /* box-shadow: 8px 4px 24px #aaa; */
+          /* border-radius: 50%; */
+          background-repeat: no-repeat;
+          background-position: 130% -26px;
+          background-image: url("@{base-url}section_05_bg_right.png@{base-url-param}");
+        }
+      }
+      .v-container{
+        position: relative;
+        height: 100%;
+        z-index: 2;
+      }
+      .v-a-logo{
+        position: absolute;
+        width: 90px;
+        right: 98px;
+        top: 40px;
+      }
+      .v-title{
+        color: #fff;
+        margin-bottom: 0;
+      }
+      .v-p{
+        color: #fff;
+      }
+      .v-article-top{
+        position: relative;
+        left: 0;
+        top: 66px;
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+      }
+      .v-article-bottom{
+        position: relative;
+        left: 0;
+        top: 30px;
+        width: 100%;
+        padding-top: 0px;
+        padding: 20px;
+      }
+    }
+
+    .v-section-footer{
+      position: relative;
+      max-height: 640px;
+      height: 568px;
+      background: #fff;
+      text-align: center;
+
+      .v-container {
+        padding: 0;
+        padding-top: 75px;
+      }
+      .v-title{
+        font-size: 18px;
+        font-family: 'Neutra Text-light';
+        color: #333;
+        text-align: center;
+      }
+      .v-p{
+        color: #666;
+        font-family: 'Brandon Grotesque-Light';
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+        padding: 0 60px;
+      }
+      .v-contact-us{
+        font-weight: 900;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        color: #fff;
+      }
+      form{
+        width: 80%;
+        display: inline-block;
+        input{
+          border: none;
+          border-bottom: 2px solid #666;
+          height: 40px;
+          margin-top: 20px;
+          padding: 0;
+          font-size: 14px;
+          background: #fff;
+          color: #666;
+          border-radius: 0;
+        }
+        .last_name{
+          float: right;
+          width:45%;
+          margin-left: 9.5%;
+        }
+        .first_name, .last_name{
+          width: 45%;
+          float: left;
+        }
+        .v-email{width:100%;}
+        .v-submit{
+          display: inline-block;
+          margin-top: 36px;
+          width: 160px;
+          height: 36px;
+          background: none;
+          color: #444;
+          border: 1px solid #666;
+          border-radius: 30px;
+          font-size: 14px;
+          transition: all 0.3s ease-in-out;
+        }
+
+      }
+
+      .v-icons-area{
+        li{display: inline-block;width:20%;}
+        margin-top: 0px;
+        padding: 0 28px;
+        .v-icon-container{
+          position: relative;
+          .v-wx-qr{
+            display: none;
+          }
+        }
+        a:hover{
+          transform: scale(0.98);
+          box-shadow: 0 0 2px #ccc;
+        }
+        a{
+          display: inline-block;
+          height: 41px;
+          width: 41px;
+          border-radius: 100%;
+          background-size: 100%;
+          background: #fff;
+          background-size: 317px 56px;
+        }
+
+        .v-faceboook{
+          background-image: url("@{base-url}footer-icon.png@{base-url-param}");
+          background-position: -1px -9px;
+        }
+        .v-instagram{
+          background-image: url("@{base-url}footer-icon.png@{base-url-param}");
+          background-position: -70px -9px;
+        }
+        .v-twitter{
+          background-image: url("@{base-url}footer-icon.png@{base-url-param}");
+          background-position: -139px -9px;
+        }
+        .v-wechat{
+          background-image: url("@{base-url}footer-icon.png@{base-url-param}");
+          background-position: -208px -9px;
+        }
+        .v-youtube{
+          background-image: url("@{base-url}footer-icon.png@{base-url-param}");
+          background-position: -277px -9px;
+        }
+      }
+
+      footer{
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 16px;
+        background-color: #fff;
+        .v-footer-p{
+          padding: 10px;
+          color: #444;
+          font-size: 12px;
+        }
+        .v-contact-us{
+          color: #444;
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+
+  .v-page-thank-you{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: #fff;
+    font-size: 18px;
+    display: none;
+
+    .close{
+      display: inline-block;
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      height: 40px;
+      width: 34px;
+      background-image: url("@{base-url}min-max.png");
+      background-size: auto 100%;
+      background-position: 34px;
+    }
+
+    .v-container{
+      background: #fff;
+      position: relative;
+      top: 60px;
+      padding: 10px 20px;
+    }
+    .v-title{
+      font-size: 32px;
+    }
+    .v-desc{
+      color: #666;
+      font-size: 16px;
+      padding: 20px 30px 60px 0;
+    }
+    .v-share-btn{
+      display: inline-block;
+      width: 278px;
+      padding: 4px;
+      background: #ddd;
+      border-radius: 40px;
+      color: #fff;
+      margin: 10px 0;
+      font-size: 24px;
+    }
+
+    .fb{
+      background: #4867aa;
+      box-shadow: 0 2px 5px #ccc;
+    }
+    .fb:hover{
+      background-color: lighten(#4867aa, 10%);
+    }
+    .tw{
+      background: #56c3f1;
+      box-shadow: 0 2px 5px #ccc;
+    }
+    .tw:hover{
+      background-color: lighten(#56c3f1, 10%);
+    }
+    .email{
+      background: #333;
+      box-shadow: 0 2px 5px #ccc;
+    }
+    .email:hover{
+      background-color: lighten(#333, 10%);
+    }
+    .link{
+      color: #e55e22;
+      font-size: 18px;
+      line-height: 36px
+    }
+    .intro{
+      padding: 16px;
+      color: #666;
+    }
+  }
+
+}
+
+//and (max-device-width : 736px)
+@media (min-width : 360px) and (max-width : 736px){
+  /*iphone 6*/
+  #page-container{
+    .v-section{
+      min-height: 640px;
+      max-height: 736px;
+
+      .v-title{
+        font-size: 23px;
+        margin-bottom: 10px;
+      }
+      .v-p{
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+    .v-section-banner{
+      background-position: 0 -20px;
+      .v-title{
+        padding: 20px;
+        margin-top: 110%;
+      }
+    }
+
+    .v-section-01{
+      .v-container{
+        padding-top: 78%;
+      }
+      .v-chat{
+        .v-chat-content{
+          width: 270px;
+          height: 52px;
+          font-size: 16px !important;
+        }
+      }
+      .v-bg figure{
+        width: 90%;
+      }
+    }
+
+    .v-section-02{
+
+      .v-bg figure {
+        background-size: 166px auto;
+      }
+      .v-container article{
+        padding-top: 41%;
+        padding-left: 158px;
+      }
+    }
+    .v-section-03{
+      background-size: 140px auto;
+
+      .v-container{
+        article{
+          padding-top: 80px;
+          padding-right: 84px;
+        }
+        .v-title{
+          padding-right: 100px;
+        }
+        .v-p{
+          color: #fff;
+          margin-bottom: 15px;
+        }
+      }
+      .v-logos{
+        bottom: 140px;
+        width: 173px;
+      }
+      .v-icons{
+        bottom: 60px;
+      }
+
+    }
+
+    .v-section-04{
+
+      .v-container{
+        article{
+          padding-top: 125px;
+        }
+        .v-title{
+          margin-bottom: 0px;
+        }
+        strong{
+          font-size: 18px;
+        }
+      }
+      .v-bg-left{
+        background-size: 297px auto;
+      }
+      .v-bg-right{
+        background-size: 297px auto;
+      }
+    }
+
+    .v-section-05{
+
+      .v-bg{
+
+        .v-bg-left{
+          height: 180px;
+          background-position: -60px bottom;
+        }
+      }
+      .v-a-logo{
+        width: 96px;
+      }
+    }
+
+    .v-section-footer{
+      height: 736px;
+      .v-p{
+        padding: 20px 80px;
+        padding-bottom: 0;
+      }
+
+      footer{
+        padding: 36px;
+      }
+    }
+
+  }
+
+}
+
+
+@media (min-width : 414px) and (max-width : 736px){
+  /*iphone 6 plus*/
+  #page-container{
+    .v-section{
+      min-height: 736px;
+      max-height: 868px;
+    }
+    .v-section-01{
+      .v-container{
+        height: 100%;
+        padding-top: 85%;
+      }
+
+      .v-title{
+        margin-bottom: 30px;
+      }
+      .v-bg figure{
+        background-size: 100% auto;
+      }
+    }
+
+    .v-section-02{
+      .v-bg figure {
+        background-size: 166px auto;
+        background-position: 24px -5px;
+      }
+      .v-container article{
+        padding: 40px;
+        padding-top: 31%;
+        padding-left: 180px;
+
+        .v-p{
+          font-size: 17px;
+        }
+      }
+
+      .v-icons-area{
+        bottom: 90px;
+      }
+    }
+
+    .v-section-03{
+      background-size: 160px auto;
+      .v-container{
+        article{
+          padding-top: 90px;
+          max-width: 338px;
+        }
+        .v-title, .v-p{
+          color: #fff;
+        }
+        .v-title{
+          margin-bottom: 24px;
+        }
+        .v-p{
+          font-size: 18px;
+        }
+      }
+      .v-logos{
+        bottom: 145px;
+        left: 40px;
+      }
+      .v-icons{
+        bottom: 60px;
+        width: 100%;
+        height: 48px;
+        background-size: 268px 46px;
+      }
+
+    }
+
+    .v-section-04{
+
+      .v-container{
+        article{
+          padding-top: 110px;
+        }
+        .v-title{
+          padding-left: 40px;
+          margin-bottom: 20px;
+        }
+        .v-p{
+          padding-left: 40px;
+          padding-right: 40px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          font-size: 18px;
+        }
+        strong{
+          font-size: 20px;
+        }
+      }
+      .v-bg-left{
+        background-size: 297px auto;
+      }
+      .v-bg-right{
+        background-size: 297px auto;
+      }
+    }
+
+    .v-section-05{
+      .v-bg{
+        .v-bg-left{
+          background-position: -10px bottom;
+        }
+      }
+      .v-a-logo{
+        width: 96px;
+      }
+      .v-title{
+        margin-bottom: 22px;
+      }
+      .v-article-top{
+        top: 100px;
+        padding: 0 40px;
+
+      }
+      .v-article-bottom{
+        top: 110px;
+        padding: 0 40px;
+
+      }
+    }
+
+    .v-section-footer{
+      height: 100%;
+
+      .v-container {
+        padding-top: 110px;
+      }
+      .v-title{
+        font-size: 23px;
+      }
+      .v-p{
+        padding: 30px 80px;
+      }
+
+      footer{
+        padding: 36px;
+      }
+    }
+
+  }
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi){
+
+}
